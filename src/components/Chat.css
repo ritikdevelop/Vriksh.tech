@@ -1,0 +1,150 @@
+.chat-popup {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  width: 350px;
+  z-index: 99999;
+  visibility: hidden;
+  opacity: 0;
+  background: var(--itzone-black);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: translateX(-100%);
+  transition: background-color 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.chat-popup.popup-visible {
+  transform: translateX(0%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.chat-popup .popup-inner {
+  position: relative;
+  display: block;
+  padding: 40px 35px;
+  padding-top: 32px;
+}
+
+.chat-popup .close-chat {
+  position: absolute;
+  display: flex;
+  left: 0px;
+  top: -55px;
+  width: 60px;
+  height: 55px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background: var(--itzone-base);
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.chat-popup .popup-inner p {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, .70);
+}
+
+.chat-popup .chat-form .form-group {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.chat-popup .chat-form .form-group:last-child {
+  margin-bottom: 0px;
+}
+
+.chat-popup .chat-form .form-group input[type='text'],
+.chat-popup .chat-form .form-group input[type='email'],
+.chat-popup .chat-form .form-group textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, .10);
+  border-radius: 5px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, .70);
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, .10);
+  transition: all 500ms ease;
+}
+
+.chat-popup .chat-form .form-group textarea {
+  height: 120px;
+  resize: none;
+}
+
+.chat-popup .chat-form .form-group input:focus,
+.chat-popup .chat-form .form-group textarea:focus {
+  outline: none;
+}
+
+.chat-popup .chat-form .form-group button {
+  border: none;
+}
+
+.chat-popup .chat-form .form-group .thm-btn::before {
+  background-color: var(--itzone-white);
+}
+
+.chat-popup .chat-form .form-group .thm-btn::after {
+  background-color: rgba(var(--itzone-white-rgb), .30);
+}
+
+.chat-popup .chat-form .form-group .thm-btn:hover {
+  color: var(--itzone-base);
+}
+
+.chat-icon {
+  position: fixed;
+  display: inline-block;
+  left: 30px;
+  bottom: 45px;
+  z-index: 99;
+}
+
+.chat-icon button {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 47px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px;
+  background: var(--itzone-base);
+  z-index: 1;
+  border: none;
+}
+
+.chat-icon button:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background-color: rgba(var(--itzone-base-rgb), .20);
+  border-radius: 5px;
+  z-index: -1;
+}

@@ -1,0 +1,294 @@
+.xs-sidebar-group .xs-overlay {
+  left: 0;
+  top: 0;
+  position: fixed;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  visibility: hidden;
+  cursor: url(../images/cross-out.png),
+    pointer;
+  transform: translateX(-100%);
+  transition: background-color 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 99999;
+}
+
+.xs-sidebar-group.isActive .xs-overlay {
+  opacity: .8;
+  visibility: visible;
+  transform: translateX(0%);
+}
+
+.xs-sidebar-group .widget-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 25px;
+}
+
+.xs-sidebar-group .widget-heading a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.xs-sidebar-group .widget-heading a:hover {
+  color: var(--itzone-base);
+  border-color: var(--itzone-base);
+}
+
+.xs-sidebar-widget {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 360px;
+  z-index: 999999;
+  overflow: hidden;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  border-right: 5px solid rgba(var(--itzone-white-rgb), .50);
+  transform: translateX(-100%);
+  transition: background-color 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.xs-sidebar-group.isActive .xs-sidebar-widget {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0%);
+  background-color: var(--itzone-black);
+}
+
+.sidebar-textwidget {
+  padding: 70px 30px;
+}
+
+.sidebar-widget-container {
+  position: relative;
+  top: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: background-color 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.xs-sidebar-group.isActive .sidebar-widget-container {
+  transform: translateX(0%);
+  visibility: visible;
+  opacity: 1;
+}
+
+.xs-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+  z-index: 0;
+}
+
+.xs-bg-black {
+  background-color: #000000;
+}
+
+.xs-sidebar-group .content-inner .logo {
+  position: relative;
+  max-width: 172px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.xs-sidebar-group .content-inner h4 {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+}
+
+.xs-sidebar-group .content-inner .content-box {
+  margin-bottom: 30px;
+  padding-right: 15px;
+}
+
+.xs-sidebar-group .content-inner .content-box p {
+  color: #ffffff;
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group:last-child {
+  margin-bottom: 0px;
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group input[type='text'],
+.xs-sidebar-group .content-inner .form-inner .form-group input[type='email'],
+.xs-sidebar-group .content-inner .form-inner .form-group textarea {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: rgba(var(--itzone-white-rgb), .70);
+  border: none;
+  border-radius: var(--itzone-bdr-radius);
+  outline: none;
+  transition: all 500ms ease;
+  background-color: rgba(var(--itzone-white-rgb), .05);
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group textarea {
+  resize: none;
+  height: 120px;
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group input:focus,
+.xs-sidebar-group .content-inner .form-inner .form-group textarea:focus {
+  border-color: #00224f;
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group button {
+  position: relative;
+  border: none;
+  background-color: var(--itzone-base);
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group button.thm-btn:before {
+  background-color: var(--itzone-white);
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group button.thm-btn:after {
+  background-color: rgba(var(--itzone-white-rgb), .30);
+}
+
+.xs-sidebar-group .content-inner .form-inner .form-group button.thm-btn:hover {
+  color: var(--itzone-base);
+}
+
+.sidebar-contact-info {
+  position: relative;
+  display: block;
+  padding-top: 43px;
+}
+
+.sidebar-contact-info ul {
+  position: relative;
+  display: block;
+  padding-bottom: 22px;
+}
+
+.sidebar-contact-info ul li {
+  position: relative;
+  display: block;
+  color: var(--itzone-white);
+  line-height: 30px;
+}
+
+.sidebar-contact-info ul li span {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+}
+
+.sidebar-contact-info ul li span:before {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.sidebar-contact-info ul li a {
+  color: var(--itzone-white);
+}
+
+.sidebar-contact-info ul li a:hover {
+  color: var(--itzone-base);
+}
+
+.xs-sidebar-group .content-inner .thm-social-link1 {
+  overflow: hidden;
+}
+
+.thm-social-link1 {
+  position: relative;
+  display: block;
+}
+
+.thm-social-link1 ul {
+  position: relative;
+}
+
+.thm-social-link1 ul li {
+  position: relative;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.thm-social-link1 ul li:last-child {
+  margin-right: 0;
+}
+
+.thm-social-link1 ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(var(--itzone-white-rgb), .10);
+  border-radius: 50%;
+  color: var(--itzone-white);
+  font-size: 15px;
+  text-align: center;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+
+.thm-social-link1 ul li a:before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: var(--itzone-base);
+  border-radius: 50%;
+  transition: .5s;
+  transform: scale(.5);
+  opacity: 0;
+  content: '';
+  z-index: -1;
+}
+
+.thm-social-link1 ul li a:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.thm-social-link1 ul li a:hover {
+  color: var(--itzone-white);
+}
