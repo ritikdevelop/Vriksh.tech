@@ -55,7 +55,7 @@ const NewsLetter = () => {
         <div className="newsletter-one__inner">
           <div className="newsletter-one__left">
             <h2 className="newsletter-one__title">
-              Subcribe to Our Newsletter
+              Subscribe to Our Newsletter
             </h2>
             <p className="newsletter-one__text">
               Get the latest SEO tips and software insights straight to your
