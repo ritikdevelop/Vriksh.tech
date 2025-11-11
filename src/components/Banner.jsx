@@ -1,8 +1,14 @@
-import React from 'react'
-import './Banner.css'
+import React from "react";
+import "./Banner.css";
+import bannerImg1 from "../images/banner-one-img-1.png";
+import bannerShape4 from "../images/banner-one-shape-4.png";
+import bannerShape6 from "../images/banner-one-shape-6.png";
+import bannerImgShape5 from "../images/banner-one-img-shape-5.png";
+
 const Banner = () => {
   return (
-    <section className="banner-one">
+    <div>
+      <section className="banner-one">
         <div
           className="banner-one__shape-1"
           data-aos="fade-up"
@@ -17,11 +23,11 @@ const Banner = () => {
         ></div>
         <div className="banner-one__shape-3 img-bounce-two"></div>
         <div className="banner-one__shape-4 float-bob-x">
-          <img src="/src/images/banner-one-shape-4.png" alt="" />
+          <img src={bannerShape4} alt="" />
         </div>
         <div className="banner-one__shape-5 float-bob-y"></div>
         <div className="banner-one__shape-6 float-bob-y">
-          <img src="/src/images/banner-one-shape-6.png" alt="" className="rotate-me" />
+          <img src={bannerShape6} alt="" className="rotate-me" />
         </div>
         <div className="container">
           <div className="banner-one__inner">
@@ -32,7 +38,7 @@ const Banner = () => {
                 data-aos-duration="1000"
                 data-aos-delay="1000"
               >
-                <img src="/src/images/banner-one-img-1.png" alt="image" />
+                <img src={bannerImg1} alt="" />
               </div>
               <div className="banner-one__img-shape-1"></div>
               <div className="banner-one__img-shape-2 float-bob"></div>
@@ -40,7 +46,7 @@ const Banner = () => {
               <div className="banner-one__img-shape-4 float-bob-x"></div>
               <div className="banner-one__img-shape-5 float-bob-y">
                 <img
-                  src="/src/images/banner-one-img-shape-5.png"
+                  src={bannerImgShape5}
                   alt=""
                   className="rotate-me"
                 />
@@ -61,7 +67,8 @@ const Banner = () => {
                 data-aos-duration="1000"
                 data-aos-delay="500"
               >
-                Modern Your Business<br />
+                Modern Your Business
+                <br />
                 With <span>IT service.</span>
               </h2>
               <p
@@ -71,7 +78,8 @@ const Banner = () => {
                 data-aos-delay="800"
               >
                 IT solutions refer to a broad range of services and technologies
-                designed to address<br />
+                designed to address
+                <br />
                 specific business needs, streamline operations, and drive
                 growth.
               </p>
@@ -82,14 +90,14 @@ const Banner = () => {
                 data-aos-delay="1000"
               >
                 <div className="banner-one__btn">
-                  <a href="about.html" className="thm-btn"
-                    >Discover More
+                  <a href="about.html" className="thm-btn">
+                    Discover More
                     <span className="fas fa-arrow-right"></span>
                   </a>
                 </div>
                 <div className="banner-one__btn">
-                  <a href="contact.html" className="thm-btn"
-                    >Let's Talk
+                  <a href="contact.html" className="thm-btn">
+                    Let's Talk
                     <span className="fas fa-arrow-right"></span>
                   </a>
                 </div>
@@ -109,7 +117,8 @@ const Banner = () => {
           </div>
         </div>
       </section>
-  )
-}
+    </div>
+  );
+};
 
-export default Banner
+export default Banner;
