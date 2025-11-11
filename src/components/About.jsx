@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import { ArrowRight, Play, Plus } from 'lucide-react'
 const About = () => {
   return (
      <section className="about-one">
@@ -63,7 +64,7 @@ const About = () => {
                   <div className="about-one__btn-box">
                     <a href="about.html" className="thm-btn"
                       >Learn More
-                      <span className="fas fa-arrow-right"></span>
+                      <ArrowRight size={16} />
                     </a>
                   </div>
                   <div className="about-one__client-info-inner">
@@ -107,7 +108,7 @@ const About = () => {
                       className="video-popup"
                     >
                       <div className="about-one__video-icon">
-                        <span className="fa fa-play"></span>
+                        <Play size={16} />
                         <i className="ripple"></i>
                       </div>
                     </a>
@@ -139,7 +140,7 @@ const About = () => {
                         </div>
                       </li>
                       <li>
-                        <a href="#"><span className="fas fa-plus"></span></a>
+                        <a href="#"><Plus size={16} /></a>
                       </li>
                     </ul>
                     <p className="about-one__client-text">
