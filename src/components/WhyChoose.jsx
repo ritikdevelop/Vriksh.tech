@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import './WhyChoose.css'
+import { ArrowRight } from 'lucide-react'
 const WhyChoose = () => {
   useEffect(() => {
     // Initialize progress bars
@@ -111,7 +112,7 @@ const WhyChoose = () => {
                 <div className="why-choose-one__btn-box">
                   <a href="about.html" className="thm-btn">
                     Learn More
-                    <span className="fas fa-arrow-right"></span>
+                    <ArrowRight size={16} />
                   </a>
                 </div>
                 <div className="why-choose-one__call-box">

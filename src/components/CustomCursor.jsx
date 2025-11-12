@@ -1,39 +1,39 @@
-import React, { useState, useEffect } from 'react'
-import './CustomCursor.css'
+import React, { useState, useEffect } from "react";
+import "./CustomCursor.css";
 
 const CustomCursor = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY })
-    }
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
 
-    window.addEventListener('mousemove', handleMouseMove)
+    window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove)
-    }
-  }, [])
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   return (
-    <div className='custom-cursor'>
+    <div className="custom-cursor">
       <div
-        className='custom-cursor__cursor'
+        className="custom-cursor__cursor"
         style={{
           left: `${mousePosition.x}px`,
-          top: `${mousePosition.y}px`
+          top: `${mousePosition.y}px`,
         }}
       ></div>
       <div
-        className='custom-cursor__cursor-two'
+        className="custom-cursor__cursor-two"
         style={{
           left: `${mousePosition.x}px`,
-          top: `${mousePosition.y}px`
+          top: `${mousePosition.y}px`,
         }}
       ></div>
     </div>
-  )
-}
+  );
+};
 
-export default CustomCursor
+export default CustomCursor;

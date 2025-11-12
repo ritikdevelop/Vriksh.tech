@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Blog.css";
+import { ArrowRight, Calendar, MessageCircle } from 'lucide-react'
 
 const Blog = () => {
   useEffect(() => {
@@ -45,12 +46,12 @@ const Blog = () => {
                 <ul className="blog-one__meta list-unstyled">
                   <li>
                     <a href="blog-details.html">
-                      <span className="far fa-calendar-alt"></span>April 5, 2025
+                      <Calendar size={16} />April 5, 2025
                     </a>
                   </li>
                   <li>
                     <a href="blog-details.html">
-                      <span className="fal fa-comments"></span>80 Comments
+                      <MessageCircle size={16} />80 Comments
                     </a>
                   </li>
                 </ul>
@@ -69,7 +70,7 @@ const Blog = () => {
                 <div className="blog-one__btn-box">
                   <a href="blog-details.html" className="thm-btn">
                     Reed More
-                    <span className="fas fa-arrow-right"></span>
+                    <ArrowRight size={16} />
                   </a>
                 </div>
               </div>
@@ -98,12 +99,12 @@ const Blog = () => {
                 <ul className="blog-one__meta-two list-unstyled">
                   <li>
                     <a href="blog-details.html">
-                      <span className="far fa-calendar-alt"></span>Feb 25, 2025
+                      <Calendar size={16} />Feb 25, 2025
                     </a>
                   </li>
                   <li>
                     <a href="blog-details.html">
-                      <span className="fal fa-comments"></span>22 Comments
+                      <MessageCircle size={16} />22 Comments
                     </a>
                   </li>
                 </ul>
@@ -118,7 +119,7 @@ const Blog = () => {
                 <div className="blog-one__btn-box-two">
                   <a href="blog-details.html" className="thm-btn">
                     Reed More
-                    <span className="fas fa-arrow-right"></span>
+                    <ArrowRight size={16} />
                   </a>
                 </div>
               </div>
@@ -145,12 +146,12 @@ const Blog = () => {
                 <ul className="blog-one__meta-two list-unstyled">
                   <li>
                     <a href="blog-details.html">
-                      <span className="far fa-calendar-alt"></span>May 19, 2025
+                      <Calendar size={16} />May 19, 2025
                     </a>
                   </li>
                   <li>
                     <a href="blog-details.html">
-                      <span className="fal fa-comments"></span>15 Comments
+                      <MessageCircle size={16} />15 Comments
                     </a>
                   </li>
                 </ul>
@@ -165,7 +166,7 @@ const Blog = () => {
                 <div className="blog-one__btn-box-two">
                   <a href="blog-details.html" className="thm-btn">
                     Reed More
-                    <span className="fas fa-arrow-right"></span>
+                    <ArrowRight size={16} />
                   </a>
                 </div>
               </div>

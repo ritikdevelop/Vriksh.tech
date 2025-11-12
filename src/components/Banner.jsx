@@ -4,6 +4,8 @@ import bannerImg1 from "../images/banner-one-img-1.png";
 import bannerShape4 from "../images/banner-one-shape-4.png";
 import bannerShape6 from "../images/banner-one-shape-6.png";
 import bannerImgShape5 from "../images/banner-one-img-shape-5.png";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -90,29 +92,29 @@ const Banner = () => {
                 data-aos-delay="1000"
               >
                 <div className="banner-one__btn">
-                  <a href="about.html" className="thm-btn">
+                  <Link to="/about" className="thm-btn">
                     Discover More
-                    <span className="fas fa-arrow-right"></span>
-                  </a>
+                    <ArrowRight size={16} strokeWidth={3} />
+                  </Link>
                 </div>
                 <div className="banner-one__btn">
-                  <a href="contact.html" className="thm-btn">
+                  <Link to="/contact" className="thm-btn">
                     Let's Talk
-                    <span className="fas fa-arrow-right"></span>
-                  </a>
+                    <ArrowRight size={16} strokeWidth={3} />
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="banner-one__video-link">
-              <a
-                href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
+              <Link
+                href="#"
                 className="video-popup"
               >
                 <div className="banner-one__video-icon">
                   <span className="fa fa-play"></span>
                   <i className="ripple"></i>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,32 +1,24 @@
-import React, { useState } from 'react'
-import './Faq.css'
+import React from "react";
 
 const Faq = () => {
-  const [activeIndex, setActiveIndex] = useState(1); // Default to second accordion active
-
-  const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   return (
-    <section className="faq-one">
+    <div>
+      <section className="faq-one">
         <div className="faq-one__shape-2 float-bob-y">
-          <img src="/src/images/faq-one-shape-2.png" alt="" />
+          <img src="images/faq-one-shape-2.png" alt="" />
         </div>
         <div className="faq-one__shape-3 float-bob">
-          <img src="/src/images/faq-one-shape-3.png" alt="" />
+          <img src="images/faq-one-shape-3.png" alt="" />
         </div>
         <div className="container">
           <div className="row">
             <div className="col-xl-6">
               <div className="faq-one__left">
-                <div
-                  className="section-title text-left sec-title-animation animation-style2"
-                >
+                <div className="section-title text-left sec-title-animation animation-style2">
                   <div className="section-title__tagline-box">
-                    <span className="section-title__tagline"
-                      >Frequently Ask Question</span
-                    >
+                    <span className="section-title__tagline">
+                      Frequently Ask Question
+                    </span>
                   </div>
                   <h2 className="section-title__title title-animation">
                     Have Questions in <span>Your Mind?</span> Get the Answers
@@ -34,8 +26,8 @@ const Faq = () => {
                   </h2>
                 </div>
                 <div className="accrodion-grp" data-grp-name="faq-one-accrodion">
-                  <div className={`accrodion ${activeIndex === 0 ? 'active' : ''}`}>
-                    <div className="accrodion-title" onClick={() => toggleAccordion(0)}>
+                  <div className="accrodion">
+                    <div className="accrodion-title">
                       <h4>How long should a business plan be</h4>
                     </div>
                     <div className="accrodion-content">
@@ -49,8 +41,8 @@ const Faq = () => {
                       </div>
                     </div>
                   </div>
-                  <div className={`accrodion ${activeIndex === 1 ? 'active' : ''}`}>
-                    <div className="accrodion-title" onClick={() => toggleAccordion(1)}>
+                  <div className="accrodion active">
+                    <div className="accrodion-title">
                       <h4>Do I need a business plan?</h4>
                     </div>
                     <div className="accrodion-content">
@@ -64,8 +56,8 @@ const Faq = () => {
                       </div>
                     </div>
                   </div>
-                  <div className={`accrodion ${activeIndex === 2 ? 'active' : ''}`}>
-                    <div className="accrodion-title" onClick={() => toggleAccordion(2)}>
+                  <div className="accrodion">
+                    <div className="accrodion-title">
                       <h4>How to Soft Launch Your Business?</h4>
                     </div>
                     <div className="accrodion-content">
@@ -79,8 +71,8 @@ const Faq = () => {
                       </div>
                     </div>
                   </div>
-                  <div className={`accrodion ${activeIndex === 3 ? 'active' : ''}`}>
-                    <div className="accrodion-title" onClick={() => toggleAccordion(3)}>
+                  <div className="accrodion">
+                    <div className="accrodion-title">
                       <h4>How Can I Find My Solution?</h4>
                     </div>
                     <div className="accrodion-content">
@@ -109,7 +101,9 @@ const Faq = () => {
                   </div>
                   <div className="faq-one__experience-box">
                     <div className="faq-one__experience-year">
-                      <h2 className="odometer" data-count="55">00</h2>
+                      <h2 className="odometer" data-count="55">
+                        00
+                      </h2>
                     </div>
                     <p className="faq-one__experience-text">
                       Year of <br />
@@ -128,7 +122,9 @@ const Faq = () => {
           </div>
         </div>
       </section>
-  )
-}
+      
+    </div>
+  );
+};
 
-export default Faq
+export default Faq;

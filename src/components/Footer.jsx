@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import { Twitter, Facebook, Instagram, Heart, Linkedin } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -20,27 +22,27 @@ const Footer = () => {
               >
                 <div className="footer-widget__about">
                   <div className="footer-widget__about-logo">
-                    <a href="index.html">
-                      <img src="/src/images/logo-2.png" alt="" />
-                    </a>
+                    <Link to="/">
+                      <img src="/src/images/logo-2.png" alt="Logo" />
+                    </Link>
                   </div>
                   <p className="footer-widget__about-text">
                     Car Is Where Early Adopters And Innovation Seekers FindGet
                     the latest SEO tips and software Lively Imaginative Tech.
                   </p>
                   <div className="footer-widget__social">
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram"></i>
-                    </a>
+                    <Link href="">
+                      <Twitter size={16} />
+                    </Link>
+                    <Link href="#">
+                      <Facebook size={16} />
+                    </Link>
+                    <Link href="#">
+                      <Linkedin size={16} />
+                    </Link>
+                    <Link href="#">
+                      <Instagram size={16} />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -52,7 +54,7 @@ const Footer = () => {
                   <h4 className="footer-widget__title">Quick links</h4>
                   <ul className="footer-widget__links-list list-unstyled">
                     <li>
-                      <a href="about.html">About Us</a>
+                      <Link to="/about">About Us</Link>
                     </li>
                     <li>
                       <a href="team.html">Meet Our Team</a>

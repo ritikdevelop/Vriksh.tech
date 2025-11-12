@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Testimonial.css'
+import { Quote } from 'lucide-react'
 
 const Testimonial = () => {
   useEffect(() => {
@@ -28,341 +29,341 @@ const Testimonial = () => {
   }, []);
 
   return (
-    <section class="testimonial-one">
-        <div class="testimonial-one__bg-color">
+    <section className="testimonial-one">
+        <div className="testimonial-one__bg-color">
           <div
-            class="testimonial-one__bg"
+            className="testimonial-one__bg"
             style={{backgroundImage: "url(/src/images/testimonial-one-bg.jpg)"}}
           ></div>
         </div>
-        <div class="container">
+        <div className="container">
           <div
-            class="section-title text-center sec-title-animation animation-style1"
+            className="section-title text-center sec-title-animation animation-style1"
           >
-            <div class="section-title__tagline-box">
-              <span class="section-title__tagline">Testimonials </span>
+            <div className="section-title__tagline-box">
+              <span className="section-title__tagline">Testimonials </span>
             </div>
-            <h2 class="section-title__title title-animation">
+            <h2 className="section-title__title title-animation">
               What Client Say <span>About </span>us
             </h2>
           </div>
-          <div class="testimonial-one__carousel owl-theme owl-carousel">
-         
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+          <div className="testimonial-one__carousel owl-theme owl-carousel">
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-1.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">Thomas Alison</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">UI/UX Designer</p>
+                    <p className="testimonial-one__sub-title">UI/UX Designer</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-           
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-2.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">Sarah Williams</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">Marketing Manger</p>
+                    <p className="testimonial-one__sub-title">Marketing Manger</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-     
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-3.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">James Anderson</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">CEO at Anaton</p>
+                    <p className="testimonial-one__sub-title">CEO at Anaton</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-         
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-1.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">Thomas Alison</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">UI/UX Designer</p>
+                    <p className="testimonial-one__sub-title">UI/UX Designer</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-         
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-2.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">Sarah Williams</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">Marketing Manger</p>
+                    <p className="testimonial-one__sub-title">Marketing Manger</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-         
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-3.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">James Anderson</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">CEO at Anaton</p>
+                    <p className="testimonial-one__sub-title">CEO at Anaton</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-          
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-1.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">Thomas Alison</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">UI/UX Designer</p>
+                    <p className="testimonial-one__sub-title">UI/UX Designer</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-        
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-2.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">Sarah Williams</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">Marketing Manger</p>
+                    <p className="testimonial-one__sub-title">Marketing Manger</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-          
-            <div class="item">
-              <div class="testimonial-one__single">
-                <div class="testimonial-one__single-inner">
-                  <div class="testimonial-one__single-shape-1"></div>
-                  <div class="testimonial-one__star">
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star-1"></span>
-                    <span class="icon-star"></span>
-                    <span class="icon-star"></span>
+
+            <div className="item">
+              <div className="testimonial-one__single">
+                <div className="testimonial-one__single-inner">
+                  <div className="testimonial-one__single-shape-1"></div>
+                  <div className="testimonial-one__star">
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star-1"></span>
+                    <span className="icon-star"></span>
+                    <span className="icon-star"></span>
                   </div>
-                  <p class="testimonial-one__text">
+                  <p className="testimonial-one__text">
                     Absolutely fantastic experience! The team exceeded our
                     expectations and delivered a solution that perfectly met our
                     needs. Their attention to detail and commitment to quality
                     is unmatched.
                   </p>
                 </div>
-                <div class="testimonial-one__client-info">
-                  <div class="testimonial-one__client-img">
+                <div className="testimonial-one__client-info">
+                  <div className="testimonial-one__client-img">
                     <img src="/src/images/testimonial-1-3.jpg" alt="" />
                   </div>
-                  <div class="testimonial-one__client-content">
-                    <h4 class="testimonial-one__client-name">
+                  <div className="testimonial-one__client-content">
+                    <h4 className="testimonial-one__client-name">
                       <a href="testimonials.html">James Anderson</a>
                     </h4>
-                    <p class="testimonial-one__sub-title">CEO at Anaton</p>
+                    <p className="testimonial-one__sub-title">CEO at Anaton</p>
                   </div>
                 </div>
-                <div class="testimonial-one__quote">
-                  <span class="fal fa-quote-right"></span>
+                <div className="testimonial-one__quote">
+                  <Quote size={16} />
                 </div>
               </div>
             </div>
-         
+
           </div>
         </div>
       </section>

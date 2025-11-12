@@ -1,5 +1,6 @@
 import React from 'react'
 import './Contact.css'
+import { ArrowRight } from 'lucide-react'
 
 const Contact = () => {
   return (
@@ -128,7 +129,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-one__btn-box">
                       <button type="submit" className="thm-btn">
-                        Submit Now <span className="fas fa-arrow-right"></span>
+                        Submit Now <ArrowRight size={16} />
                       </button>
                     </div>
                   </div>

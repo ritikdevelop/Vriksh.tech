@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import './Header.css';
+import React, { useState, useEffect } from "react";
+import "./Header.css";
 import {
+  ArrowRight,
   ChevronDown,
   ChevronRight,
   Facebook,
@@ -9,10 +10,10 @@ import {
   MapPin,
   Twitter,
   X,
-} from 'lucide-react';
-import { Link } from 'react-router-dom';
-import Widget from './Widget';
-import logo from '../images/logo-1.png';
+} from "lucide-react";
+import { Link } from "react-router-dom";
+import Widget from "./Widget";
+import logo from "../images/logo-1.png";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -37,7 +38,9 @@ const Header = () => {
                 </div>
                 <div className="text">
                   <p>
-                    <a href="mailto:info@Itzone24.com">info@Itzone24.com</a>
+                    <Link href="mailto:info@Itzone24.com">
+                      info@Itzone24.com
+                    </Link>
                   </p>
                 </div>
               </li>
@@ -54,16 +57,16 @@ const Header = () => {
             <div className="main-menu__top-right">
               <p className="main-menu__social-title">Follow Us On:</p>
               <div className="main-menu__social">
-                <a href="#">
+                <Link href="#">
                   <Twitter size={16} />
-                </a>
-                <a href="#">
+                </Link>
+                <Link href="#">
                   <Facebook size={16} />
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link href="#">
                   <Instagram size={16} />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -98,13 +101,13 @@ const Header = () => {
                   <li>
                     <Link to="/about">About</Link>
                   </li>
-                  <li className="">
-                    <Link to="/services">Services</Link>
-                    <ChevronDown />
+                  <li>
+                    <Link className="arrow" to="/services">
+                      Services <ChevronDown size={18} />
+                    </Link>
                     <ul className="shadow-box">
                       <li>
                         <Link to="/ui-ux-design">UI/UX Design</Link>
-                        <ChevronRight />
                       </li>
                       <li>
                         <Link to="/web-development">Web Development</Link>
@@ -135,7 +138,11 @@ const Header = () => {
               </div>
               <div className="main-menu__right">
                 <div className="main-menu__nav-sidebar-icon">
-                  <Link className="navSidebar-button" to="#" onClick={() => setSidebarOpen(!sidebarOpen)}>
+                  <Link
+                    className="navSidebar-button"
+                    to="#"
+                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                  >
                     <span className="icon-dots-menu-one"></span>
                     <span className="icon-dots-menu-two"></span>
                     <span className="icon-dots-menu-three"></span>
@@ -143,7 +150,7 @@ const Header = () => {
                 </div>
                 <div className="main-menu__btn-box">
                   <Link to="/about" className="thm-btn">
-                    Discover More <span className="fas fa-arrow-right"></span>
+                    Discover More <ArrowRight size={16} />
                   </Link>
                 </div>
               </div>

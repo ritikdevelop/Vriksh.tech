@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
+import "./Services.css";
 
 const Services = () => {
+  useEffect(() => {
+    if (window.$ && window.$.fn.owlCarousel) {
+      $(".service-one__carousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          992: {
+            items: 3,
+          },
+          1200: {
+            items: 4,
+          },
+        },
+      });
+    }
+  }, []);
+
   return (
     <section className="service-one">
       <div className="services-one__shape-1"></div>
@@ -13,11 +42,11 @@ const Services = () => {
             <span className="section-title__tagline">Our Services</span>
           </div>
           <h2 className="section-title__title title-animation">
-            Innovative IT Services
-            <br /> Tailored <span>For Your Success.</span>
+            Innovative IT Services <br />
+            Tailored <span>For Your Success.</span>
           </h2>
         </div>
-        <div className="service-one__carousel">
+        <div className="service-one__carousel owl-theme owl-carousel">
           <div className="item">
             <div className="service-one__single-inner">
               <div className="service-one__single-wrap">
