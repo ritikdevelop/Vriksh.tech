@@ -106,15 +106,17 @@ const About = () => {
                   <img src="/src/images/about-one-img-2.jpg" alt="" />
                 </div>
                 <div className="about-one__video-link">
-                  <Link
+                  <a
                     href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
                     className="video-popup"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <div className="about-one__video-icon">
                       <Play size={16} />
                       <i className="ripple"></i>
                     </div>
-                  </Link>
+                  </a>
                 </div>
                 <div className="about-one__client-box">
                   <ul className="about-one__client-box-img-list list-unstyled">
@@ -143,9 +145,9 @@ const About = () => {
                       </div>
                     </li>
                     <li>
-                      <Link href="#">
+                      <a href="#">
                         <Plus size={16} />
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                   <p className="about-one__client-text">
