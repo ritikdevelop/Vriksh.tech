@@ -35,7 +35,7 @@ A modern, responsive website for Vriksh Tech, built with React and Vite. This pr
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/ritikdevelop/Vriksh.tech.git
    cd vriksh-tech
    ```
 
