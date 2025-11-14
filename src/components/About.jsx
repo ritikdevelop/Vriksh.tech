@@ -20,8 +20,7 @@ const About = () => {
                   <span className="section-title__tagline">About Us</span>
                 </div>
                 <h2 className="section-title__title title-animation">
-                  Boost Business with Our <br />
-                  Innovative
+                  Boost Business with Our Innovative
                   <span> IT Solutions</span>
                 </h2>
               </div>
