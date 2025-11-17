@@ -759,6 +759,36 @@
     });
   }
 
+  // FAQ One Accrodion
+  if ($(".faq-one-accrodion").length) {
+    var accrodionGrp = $(".faq-one-accrodion");
+    accrodionGrp.each(function () {
+      var accrodionName = $(this).data("grp-name");
+      var Self = $(this);
+      var accordion = Self.find(".accrodion");
+      Self.addClass(accrodionName);
+      Self.find(".accrodion .accrodion-content").hide();
+      Self.find(".accrodion.active").find(".accrodion-content").show();
+      accordion.each(function () {
+        $(this)
+          .find(".accrodion-title")
+          .on("click", function () {
+            if ($(this).parent().hasClass("active") === false) {
+              $( "." + accrodionName )
+                .find(".accrodion")
+                .removeClass("active");
+              $( "." + accrodionName )
+                .find(".accrodion")
+                .find(".accrodion-content")
+                .slideUp();
+              $(this).parent().addClass("active");
+              $(this).parent().find(".accrodion-content").slideDown();
+            }
+          });
+      });
+    });
+  }
+
 
 
   $(".contact-form-validated").each(function () {
