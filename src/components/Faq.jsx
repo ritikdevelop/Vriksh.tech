@@ -1,6 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Faq = () => {
+   useEffect(() => {
+    // Load jQuery if not already loaded
+    if (typeof window !== "undefined" && !window.jQuery) {
+      const script = document.createElement("script");
+      script.src = "https://code.jquery.com/jquery-3.6.0.min.js";
+      script.onload = () => {
+        // Load the script.js after jQuery is loaded
+        const customScript = document.createElement("script");
+        customScript.src = "/src/images/js/script.js";
+        document.head.appendChild(customScript);
+      };
+      document.head.appendChild(script);
+    } else {
+      // If jQuery is already loaded, load script.js directly
+      const customScript = document.createElement("script");
+      customScript.src = "/src/images/js/script.js";
+      document.head.appendChild(customScript);
+    }
+  }, []);
   return (
     <div>
       <section className="faq-one">
@@ -25,7 +44,7 @@ const Faq = () => {
                     Now
                   </h2>
                 </div>
-                <div className="accrodion-grp" data-grp-name="faq-one-accrodion">
+                <div className="faq-one-accrodion" data-grp-name="faq-one-accrodion">
                   <div className="accrodion">
                     <div className="accrodion-title">
                       <h4>How long should a business plan be</h4>
