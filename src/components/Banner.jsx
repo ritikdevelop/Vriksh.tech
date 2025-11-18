@@ -4,7 +4,7 @@ import bannerImg1 from "../images/banner-one-img-1.png";
 import bannerShape4 from "../images/banner-one-shape-4.png";
 import bannerShape6 from "../images/banner-one-shape-6.png";
 import bannerImgShape5 from "../images/banner-one-img-shape-5.png";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
@@ -49,7 +49,7 @@ const Banner = () => {
               <div className="banner-one__img-shape-5 float-bob-y">
                 <img
                   src={bannerImgShape5}
-                  alt=""
+                  alt="Banner Image"
                   className="rotate-me"
                 />
               </div>
@@ -111,7 +111,7 @@ const Banner = () => {
                 className="video-popup"
               >
                 <div className="banner-one__video-icon">
-                  <span className="fa fa-play"></span>
+                  <Play size={24} strokeWidth={2} />
                   <i className="ripple"></i>
                 </div>
               </Link>
