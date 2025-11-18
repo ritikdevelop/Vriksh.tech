@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import './WhyChoose.css'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Phone } from 'lucide-react'
+import { Link } from "react-router-dom";
 const WhyChoose = () => {
   useEffect(() => {
     // Initialize progress bars
@@ -110,14 +111,14 @@ const WhyChoose = () => {
               </div>
               <div className="why-choose-one__btn-and-call-box">
                 <div className="why-choose-one__btn-box">
-                  <a href="about.html" className="thm-btn">
+                  <Link to="/about" className="thm-btn">
                     Learn More
                     <ArrowRight size={16} />
-                  </a>
+                  </Link>
                 </div>
                 <div className="why-choose-one__call-box">
                   <div className="why-choose-one__call-icon">
-                    <span className="icon-call"></span>
+                    <Phone size={18} className="text-white" />
                   </div>
                   <div className="why-choose-one__call-content">
                     <p>Call Us Any Time</p>
