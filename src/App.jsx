@@ -17,6 +17,7 @@ import WebDevelopment from "./pages/WebDevelopment";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import DigitalMarketing from "./pages/DigitalMarketing";
+import BackToTop from "./components/BacktoTop";
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
       </Routes>
       <Chat />
       <Footer />
+      <BackToTop />
     </div>
   );
 };
