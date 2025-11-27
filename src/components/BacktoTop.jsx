@@ -25,10 +25,10 @@ const BackToTop = () => {
       className={`back-to-top ${isVisible ? 'visible' : ''}`}
       onClick={scrollToTop}
     >
+      <span className="scroll-to-top__arrow">↑</span>
       <span className="scroll-to-top__wrapper">
         <span className="scroll-to-top__inner"></span>
       </span>
-      <span className="scroll-to-top__text">Go Back Top</span>
     </div>
   );
 };
