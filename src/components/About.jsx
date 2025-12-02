@@ -2,6 +2,8 @@ import React from "react";
 import "./About.css";
 import { ArrowRight, Play, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Award01FreeIcons, Certificate01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 const About = () => {
   return (
     <section className="about-one">
@@ -34,7 +36,12 @@ const About = () => {
               <ul className="about-one__points list-unstyled">
                 <li>
                   <div className="icon">
-                    <span className="icon-award"></span>
+                    <HugeiconsIcon
+                      icon={Award01FreeIcons}
+                      size={30}
+                      color="#ffffff"
+                      strokeWidth={1.5}
+                    />
                   </div>
                   <div className="content">
                     <h4>Award-Winning Company.</h4>
@@ -47,7 +54,13 @@ const About = () => {
                 </li>
                 <li>
                   <div className="icon">
-                    <span className="icon-certified"></span>
+                    <HugeiconsIcon
+                      icon={Certificate01Icon}
+                      size={30}
+                      color="currentColor"
+                      strokeWidth={1.5}
+                      className="text-white"
+                    />
                   </div>
                   <div className="content">
                     <h4>Certified Company</h4>
@@ -66,25 +79,7 @@ const About = () => {
                     <ArrowRight size={18} />
                   </Link>
                 </div>
-                <div className="about-one__client-info-inner">
-                  <div className="about-one__client-info">
-                    <div className="about-one__client-img-inner">
-                      <div className="about-one__client-img">
-                        <img
-                          src="/src/images/about-one-client-img-1.jpg"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                    <div className="about-one__client-details">
-                      <h5>Adam Smith</h5>
-                      <p>ceo,Itzone</p>
-                    </div>
-                  </div>
-                  <div className="about-one__client-sign">
-                    <img src="/src/images/about-one-client-sign.png" alt="" />
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -151,10 +146,10 @@ const About = () => {
                   </ul>
                   <p className="about-one__client-text">
                     <span className="odometer" data-count="120">
-                      20K {" "}
+                      20K{" "}
                     </span>
                     <span className="about-one__client-text-letter"></span>
-                     Satisfied Client
+                    Satisfied Client
                   </p>
                 </div>
                 <div className="about-one__experience-box">
